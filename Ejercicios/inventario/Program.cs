@@ -6,7 +6,7 @@ namespace inventario
     {
         static string[,] productos = new string[5,3]
         {
-            { "001", "iPhoneX", "0" },
+            { "001", "iPhoneX", "1" },
             { "002", "Laptop Dell", "5" },
             { "003", "Monitor Samsung", "2" },
             { "004", "Mouse", "100" },
