@@ -1,4 +1,4 @@
-﻿public class Producto
+public class Producto
 {
     public string Codigo { get; set; }
     public string Descripcion { get; set; }
