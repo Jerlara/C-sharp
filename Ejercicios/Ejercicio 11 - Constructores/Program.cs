@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace propiedades
 {
@@ -16,7 +16,7 @@ namespace propiedades
             b.SegundoNombre = "Martinez";
 
             Alumno c = new Alumno(3);
-            b.PrimerNombre = "Pedro";
+            c.PrimerNombre = "Pedro";
 
             Console.WriteLine(a.Id);
             Console.WriteLine(b.Id);
