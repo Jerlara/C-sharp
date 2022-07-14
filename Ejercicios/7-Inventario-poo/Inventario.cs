@@ -114,5 +114,4 @@ public class Inventario
 
         movimientoInventario(codigo, Int32.Parse(cantidad), "+");
     }
-
 }
