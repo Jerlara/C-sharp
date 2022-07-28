@@ -32,7 +32,7 @@ public class Orden
         ListaOrdenDetalle.Add(o);
 
         Subtotal += cantidad * producto.Precio;
-        Impuesto += Subtotal * 0.15;
-        Total += Subtotal + Impuesto;
+        Impuesto = Subtotal * 0.15;
+        Total = Subtotal + Impuesto;
     }
 }
