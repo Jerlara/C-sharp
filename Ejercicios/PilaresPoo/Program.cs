@@ -1,54 +1,32 @@
 ﻿using System;
 
-namespace banimal
+namespace DatosAnimales
 {
     class Program
-    {        
+    {
         static void Main(string[] args)
         {
-            string opcion = "";
-            Animales datos = new Animales();
+            Utilidades.EnviarCorreo();
 
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("Tipos de Animales");
-                Console.WriteLine("*********************");
-                Console.WriteLine("");
-                Console.WriteLine("1 - Mamiferos");
-                Console.WriteLine("2 - Insectos");
-                Console.WriteLine("3 - Peces");
-                Console.WriteLine("4 - Aves");
-                Console.WriteLine("5 - Anfibios");
-                Console.WriteLine("6 - Reptiles");
-                Console.WriteLine("0 - Salir");
-                opcion = Console.ReadLine();
+            Perro p = new Perro();
+            p.Nombre = "Firulais";
+            p.Patas = 4;
+            p.EsDomestico = true;
+            p.Comer();
+            p.Caminar();
+            p.Ladrar();
+            p.Tamano();
 
-                switch (opcion)
-                {
-                    case "1": 
-                        inventario.listarProductos();
-                        break;
-                    case "2":
-                        inventario.ingresoDeInventario();
-                        break;
-                    case "3":
-                        inventario.salidaDeInventario();
-                        break;    
-                    case "4":
-                        inventario.ajustenegativoDeInventario();
-                        break;
-                    case "5":
-                        inventario.ajustepositivoDeInventario();
-                        break;                                        
-                    default:
-                    break;
-                }
+            Console.WriteLine(p.Nombre);
+            Console.WriteLine(p.Patas);
 
-                if (opcion == "0") {
-                    break;
-                }
-            }            
+            Gato g = new Gato();
+            g.Nombre = "Garfield";
+            g.Patas = 4;
+            g.Pelaje = "Peludo";
+            g.Comer();
+            g.Caminar();
+            g.Maullar();
         }
     }
 }
