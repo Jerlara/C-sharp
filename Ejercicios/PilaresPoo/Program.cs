@@ -16,6 +16,7 @@ namespace DatosAnimales
             p.Caminar();
             p.Ladrar();
             p.Tamano();
+            p.Comun();
 
             Console.WriteLine(p.Nombre);
             Console.WriteLine(p.Patas);
@@ -41,6 +42,7 @@ namespace DatosAnimales
             a.pelaje();
             a.Volar();
             a.Comer();
+            a.Comun();
 
             Reptiles r = new Reptiles();
             r.Apodo();
