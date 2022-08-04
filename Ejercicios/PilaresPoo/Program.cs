@@ -27,6 +27,27 @@ namespace DatosAnimales
             g.Comer();
             g.Caminar();
             g.Maullar();
+            
+            Peces pe = new Peces();
+            pe.habitad();
+            pe.aletas = 2;
+            pe.pelaje();
+            pe.Comer();
+            pe.Nadar();
+
+            Aves a = new Aves();
+            a.Apodo();
+            a.Alas = 2;
+            a.pelaje();
+            a.Volar();
+            a.Comer();
+
+            Reptiles r = new Reptiles();
+            r.Apodo();
+            r.procreados();
+            r.carn();
+            r.Comer();
+
         }
     }
 }

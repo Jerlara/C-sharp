@@ -7,4 +7,8 @@ public abstract class Animales
     {
         Console.WriteLine("Comiendo...");
     }
+    public void Comun()
+    {
+        Console.WriteLine("Pluricelulares");
+    }
 }
